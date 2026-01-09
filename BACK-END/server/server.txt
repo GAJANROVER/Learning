@@ -1,0 +1,9 @@
+# 1. Check scheduled tasks
+php artisan schedule:list
+
+
+# 2. Check if artisan exists
+ls -la artisan
+
+# verify the cron 
+crontab -l
