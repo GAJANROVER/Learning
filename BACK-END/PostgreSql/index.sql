@@ -53,30 +53,13 @@
 -- OFFSET 5 ROW
 -- FETCH FIRST 5 ROW ONLY;
 
--- To match the values in the payment_date column with a list of dates, you need to cast them to date values that have the date part only.
+0
 
--- To do that you use the :: cast operator:
-
--- SELECT
---   payment_id,
---   amount,
---   payment_date
--- FROM
---   payment
--- WHERE
---   payment_date::date IN ('2007-02-15', '2007-02-16');
-
-
--- inner join 
-
--- SELECT
---   customer_id,
---   first_name,
---   last_name,
---   amount,
---   payment_date
--- FROM
---   customer
---   INNER JOIN payment USING(customer_id)
--- ORDER BY
---   payment_date;
+SELECT
+  payment_id,
+  amount,
+  payment_date
+FROM
+  payment
+WHERE
+  payment_date::date IN ('2007-02-15', '2007-02-16');
