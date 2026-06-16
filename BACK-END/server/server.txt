@@ -7,3 +7,12 @@ ls -la artisan
 
 # verify the cron 
 crontab -l
+
+Check your Ubuntu version
+lsb_release -a
+
+Update the server
+apt update && apt upgrade -y
+
+confirm everything is clean
+apt autoremove -y && apt autoclean
